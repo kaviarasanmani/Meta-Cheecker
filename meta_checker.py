@@ -5,6 +5,9 @@ import pandas as pd
 
 def get_status_definition(status_code):
     status_definitions = {
+
+
+
         100: "Continue - The server has received the request headers",
         101: "Switching Protocols - The server is switching protocols",
         200: "OK - The request was successful",
@@ -33,6 +36,9 @@ def get_status_definition(status_code):
         502: "Bad Gateway - The server received an invalid response from an upstream server",
         503: "Service Unavailable - The server is temporarily unavailable",
         504: "Gateway Timeout - The server timed out while waiting for a response",
+
+
+        
     }
     return status_definitions.get(status_code, "Unknown Status")
 
