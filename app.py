@@ -11,6 +11,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
+
 def get_status_definition(status_code):
     status_definitions = {
 
