@@ -1,0 +1,16 @@
+[general]
+title = "Poorvika Meta Checker"
+
+[server]
+favicon = "https://poorvika.com/favicon.ico.ico"
+port = 8501
+
+[browser]
+defaultPageSize = "1000px"
+
+[theme]
+primaryColor = "#FF5733"
+backgroundColor = "#F0F2F6"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#333333"
+font = "sans-serif"
