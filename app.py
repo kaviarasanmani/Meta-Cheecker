@@ -154,80 +154,10 @@ if st.button("Metadata Checker"):
     )
 # cd
 
-
-# import streamlit as st
-# from authlib.integrations.requests_client import OAuth
-
-# # Create an OAuth object for handling Google OAuth
-# oauth = OAuth()
-
-# # Configure Google OAuth
-# oauth.register(
-#     name='google',
-#     client_id='280849678280-49a69fmkjs5lh4kh0tthidajg75pkc4p.apps.googleusercontent.com',
-#     client_secret='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',
-#     authorize_url='https://accounts.google.com/o/oauth2/auth',
-#     authorize_params=None,
-#     authorize_params_prompt='consent',
-#     authorize_params_access_type='offline',
-#     authorize_params_include_granted_scopes='true',
-#     authorize_params_response_type='code',
-#     authorize_params_state='state',
-#     authorize_params_redirect_uri='http://localhost:8501',
-#     authorize_params_prompt='select_account',
-#     authorize_params_scope='openid profile email',
-#     authorize_params_access_type='offline',
-#     client_kwargs={'scope': 'openid profile email'},
-# )
-
-# # Streamlit app
-# def main():
-#     st.title("Login and Register with Google OAuth")
-    
-#     if not st.session_state.authenticated:
-#         login_button = st.button("Login with Google")
 #         if login_button:
 #             redirect_uri = oauth.google.authorize_redirect()
 #             return redirect_uri
 
-#     else:
-#         st.write(f"Logged in as {st.session_state.user['name']}")
-#         logout_button = st.button("Logout")
-#         if logout_button:
-#             st.session_state.clear()
-    
-#     st.write("Other app content goes here.")
-
-# if __name__ == "__main__":
-#     main()
-
-# import streamlit as st
-# from requests_oauthlib import OAuth2Session
-# import requests
-
-# # Define your Google OAuth2 credentials
-# client_id='280849678280-49a69fmkjs5lh4kh0tthidajg75pkc4p.apps.googleusercontent.com',
-# client_secret='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',
-# redirect_uri = 'http://localhost:8501'
-
-
-# # Create a session for OAuth2 authentication
-# oauth = OAuth2Session(client_id, redirect_uri=redirect_uri)
-
-# # Streamlit app
-# def main():
-#     # Initialize st.session_state
-#     if 'authenticated' not in st.session_state:
-#         st.session_state.authenticated = False
-
-#     st.title("Login and Register with Google OAuth")
-    
-#     if not st.session_state.authenticated:
-#         authorization_url, state = oauth.authorization_url('https://accounts.google.com/o/oauth2/auth', prompt='select_account')
-#         login_button = st.button("Login with Google")
-#         if login_button:
-#             st.session_state.oauth_state = state
-#             st.markdown(f"[Click here to Login with Google]({authorization_url})")
 #     else:
 #         st.write(f"Logged in as {st.session_state.user['name']}")
 #         logout_button = st.button("Logout")
